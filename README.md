@@ -1,2 +1,2 @@
 # UVGPhysics
-Repositorio para contribuir con los simuladores de física de la Universidad del Valle de Guatemala
+Repositorio para contribuir con los simuladores de física de la Universidad del Valle de Guatemala.
