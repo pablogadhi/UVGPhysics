@@ -1,3 +1,9 @@
+<!-- Autor: Pablo Gadhi Rodriguez Marcucci
+     Fecha: 01/06/2017
+     Descripción: Simulación de un problema de ondas estacionarias. Se utliza la librería de material design
+                  para la apariencia, jquery, velocity.js para las animaciones y mathjax para mostrar expresiones matemáticas.
+ -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,6 +35,7 @@
         </div>
     </div>
     <p style="padding-top: 100px; font-size: 160%; margin-left: 40px; margin-right: 40px">Considere el aparato que se muestra en la siguiente simulación, donde el objeto colgante tiene masa M y la cuerda está vibrando en su segundo armónico. La varilla vibrante de la izquierda mantiene una frecuencia constante. El viento empieza a soplar a la derecha, aplicando una fuerza horizontal constante F en el objeto colgante. ¿Cuál es la magnitud de la fuerza que el viento debe aplicar al objeto colgante para que la cuerda vibre en su primer armónico, como se muestra en la simulación?</p>
+    <!-- Imágenes de la animación en formato svg -->
     <div style="padding-top: 50px; margin-left: 40px; display: block;">
         <svg id="SVGRoot" width="1000" height="450" version="1.1" viewBox="0 0 2000 900" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
          <defs>
@@ -77,8 +84,8 @@
           </g>
           <path id="cuerdaM" d="m1578.6 222.94-1.9408 394.24" fill="#c49e2c" fill-opacity=".99706" stroke="#c49e2c" stroke-width="3.8372"/>
           <g id="waveOpen" fill="none" stroke-width="2.807">
-           <path d="m103 172.75c466.16-96.982 932.33-96.982 1398.5 0" stroke="#c49e2c" stroke-opacity=".98039" title="sin(x)"/>
-           <path d="m103 172.75c466.16 96.982 932.33 96.982 1398.5 0" stroke="#e2ce7c" stroke-opacity=".92157" title="-sin(x)"/>
+           <path class="waveline" d="m103 172.75c466.16-96.982 932.33-96.982 1398.5 0" stroke="#c49e2c" stroke-opacity=".98039" title="sin(x)"/>
+           <path class="waveline" d="m103 172.75c466.16 96.982 932.33 96.982 1398.5 0" stroke="#e2ce7c" stroke-opacity=".92157" title="-sin(x)"/>
           </g>
           <g id="forceVector">
            <path d="m1250 657.17h181.62v-8.3333l28.378 12.5-28.378 12.5v-8.3333h-181.62z" stroke="#000" stroke-width=".4863px"/>

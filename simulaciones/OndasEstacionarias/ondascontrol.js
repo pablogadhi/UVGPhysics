@@ -1,9 +1,12 @@
+/*  Autor: Pablo Gadhi Rodriguez Marcucci
+    Fecha: 01/06/2017
+    Descripción: Control de las animaciones de ondas estacionarias.
+ */
 
-/**$( document ).ready(function() {
-    $("#figura").velocity("fadeIn", { duration: 1500 }).velocity("fadeOut", { delay: 500, duration: 1500 });
-});*/
 
+/* Animaciones de la simulación se ejecutan al cargar la página*/
 $(document).ready(function() {
+    $("#waveOpen").css("opacity", "0")
     $("#masaM").velocity({translateX: "150px", translateY: "-50px"}, {duration: 4000, loop: true});
     $("#forceVector").velocity({translateX: "150px", translateY: "-50px"}, {duration: 4000, loop: true});
     $("#cuerdaM").velocity({transformOriginX:"50%", transformOriginY:"1%", rotateZ: "-24.5deg"}, {duration: 4000, loop: true});
@@ -12,8 +15,10 @@ $(document).ready(function() {
 });
 
 
-var contador = 0;
+var contador = 0; //Contador para verificación de clicks del botón siguiente
 
+
+/* Función que se ejecuta al presionar el botón siguiente y va mostrando la linea de las respuestas, dependiendo del valor del contador.*/
 function mostrarPasos(){
     contador = contador + 1;
     switch(contador){
