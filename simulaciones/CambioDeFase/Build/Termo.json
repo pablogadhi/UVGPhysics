@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "Termo.data.unityweb",
+"asmCodeUrl": "Termo.asm.code.unityweb",
+"asmMemoryUrl": "Termo.asm.memory.unityweb",
+"asmFrameworkUrl": "Termo.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
